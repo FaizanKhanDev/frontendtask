@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Navbar from "./navbar/Navbar"
 import HeroSection from "./home/HeroSection"
 import PremiumFeatures from "./home/PremiumFeatures"
