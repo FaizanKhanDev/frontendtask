@@ -35,16 +35,27 @@ const FeatureCard = () => (
     </div>
 );
 
-const HeroImages = () => (
-    <div className="relative h-[400px] md:h-[500px]">
-        {[0, 20, 40].map((top, index) => (
-            <div key={index} className={`absolute top-${top} right-${top} w-[200px] md:w-[250px] z-${30 - index * 10}`}>
-                <Image src="https://imgur.com/qAVShBu.png" alt="Mobile app interface" width={250} height={500} className="object-contain" />
-            </div>
-        ))}
-        <div className="absolute top-20 right-20 w-[300px] h-[300px] bg-red-500/30 rounded-full blur-3xl -z-10"></div>
-    </div>
-);
+
+const HeroImages = () => {
+    const images = [
+        "https://imgur.com/dvB6dja.png",
+        "https://imgur.com/7r6susp.png",
+        "https://imgur.com/HvARfHB.png",
+    ];
+
+    return (
+        <div className="relative h-[400px] md:h-[500px]">
+            {images.map((src, index) => (
+                <div key={index} className={`absolute top-${index * 20} right-${index * 20} w-[200px] md:w-[250px] z-${1 - index * 10}`}>
+                    <Image src={src} alt="Mobile app interface" width={600} height={600} className="object-contain" />
+                </div>
+            ))}
+            <div className="absolute top-20 right-20 w-[300px] h-[300px] bg-red-500/30 rounded-full blur-3xl -z-10"></div>
+        </div>
+    );
+};
+
+
 
 export default function HeroSection() {
     return (

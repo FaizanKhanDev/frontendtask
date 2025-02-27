@@ -23,10 +23,10 @@ export default function Home() {
       <HeroSection></HeroSection>
 
       {/* (-------------) || Premium Features Section   || (---------------) */}
-      <PremiumFeatures></PremiumFeatures>
+      {/* <PremiumFeatures></PremiumFeatures> */}
 
       {/* CTA Section */}
-      <CTA></CTA>
+      {/* <CTA></CTA> */}
 
       {/* Footer */}
       <footer className="container mx-auto px-4 py-6 text-center text-gray-500 text-sm">
