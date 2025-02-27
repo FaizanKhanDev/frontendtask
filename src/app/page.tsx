@@ -3,6 +3,7 @@ import { Play, Check, Apple } from "lucide-react"
 import Navbar from "./navbar/Navbar"
 import HeroSection from "./home/HeroSection"
 import PremiumFeatures from "./home/PremiumFeatures"
+import CTA from "./CTA"
 export default function Home() {
   return (
     <div className="min-h-screen bg-white overflow-hidden relative">
@@ -25,7 +26,7 @@ export default function Home() {
       <PremiumFeatures></PremiumFeatures>
 
       {/* CTA Section */}
- 
+      <CTA></CTA>
 
       {/* Footer */}
       <footer className="container mx-auto px-4 py-6 text-center text-gray-500 text-sm">
