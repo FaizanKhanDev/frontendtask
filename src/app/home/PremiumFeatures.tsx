@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image"
-import { Play, Check, Apple } from "lucide-react"
+import { Check } from "lucide-react"
 export default function PremiumFeatures() {
     return (
         <section className="container mx-auto px-4 py-20">

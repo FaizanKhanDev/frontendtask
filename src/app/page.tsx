@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { Play, Check, Apple } from "lucide-react"
 import Navbar from "./navbar/Navbar"
 import HeroSection from "./home/HeroSection"
 import PremiumFeatures from "./home/PremiumFeatures"

@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image"
-import { Play, Check, Apple } from "lucide-react"
+import { Apple } from "lucide-react"
 
 export default function CTA() {
     return (
