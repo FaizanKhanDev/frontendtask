@@ -1,101 +1,265 @@
-import Image from "next/image";
+import Image from "next/image"
+import Link from "next/link"
+import { Play, Check, Apple } from "lucide-react"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen bg-white overflow-hidden relative">
+      {/* Decorative stars */}
+      <div className="absolute top-20 left-10 text-2xl text-gray-200">✧</div>
+      <div className="absolute top-80 left-5 text-2xl text-gray-200">✧</div>
+      <div className="absolute top-40 right-10 text-2xl text-gray-200">✧</div>
+      <div className="absolute bottom-40 right-20 text-2xl text-gray-200">✧</div>
+      <div className="absolute bottom-80 left-20 text-2xl text-gray-200">✧</div>
+      <div className="absolute bottom-20 right-10 text-2xl text-gray-200">✧</div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Navigation */}
+      <header className="container mx-auto px-4 py-6 flex items-center justify-between">
+        <div className="flex items-center">
+          <div className="h-8 w-8 bg-red-500 rounded-full mr-2"></div>
+          <span className="font-bold text-xl">uifry</span>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+        <nav className="hidden md:flex items-center space-x-8">
+          <Link href="/" className="font-medium text-black">
+            Home
+          </Link>
+          <Link href="/about" className="font-medium text-gray-600">
+            About Us
+          </Link>
+          <Link href="/pricing" className="font-medium text-gray-600">
+            Pricing
+          </Link>
+          <Link href="/features" className="font-medium text-gray-600">
+            Features
+          </Link>
+        </nav>
+
+        <button className="bg-black text-white px-6 py-2 rounded-md">Download</button>
+      </header>
+
+      {/* Hero Section */}
+      <section className="container mx-auto px-4 pt-10 pb-20">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="order-2 md:order-1">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+              Make <span className="bg-red-500/20">The Best</span>
+              <br />
+              Financial <span className="bg-red-500/20">Decisions</span>
+            </h1>
+
+            <p className="text-gray-600 mb-8 max-w-lg">
+              Cum Et Convallis Risus Placerat Aliquam, Nunc. Scelerisque Aliquet Faucibus Tincidunt Eu Adipiscing Sodis
+              Arcu Lorem Porttitor.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-black text-white px-6 py-3 rounded-md flex items-center">
+                Get Started
+                <svg className="ml-2 w-4 h-4" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M5 12H19M19 12L12 5M19 12L12 19"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+
+              <button className="border border-gray-300 px-6 py-3 rounded-md flex items-center">
+                <Play className="mr-2 w-4 h-4" />
+                Watch Video
+              </button>
+            </div>
+
+            {/* Feature card */}
+            <div className="mt-12 relative max-w-sm">
+              <div className="bg-black text-white p-4 rounded-lg">
+                <div className="flex items-center mb-2">
+                  <div className="h-6 w-6 bg-red-500 rounded-full mr-2 flex items-center justify-center text-xs">1</div>
+                  <span>Market Overview</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="h-6 w-6 bg-red-500 rounded-full mr-2 flex items-center justify-center text-xs">2</div>
+                  <span>Smart Recommendations</span>
+                </div>
+              </div>
+
+              <div className="absolute -bottom-10 -right-10 bg-red-500 text-white p-3 rounded-lg text-sm">
+                uifry Premium
+                <br />
+                From $14
+              </div>
+            </div>
+          </div>
+
+          <div className="order-1 md:order-2 relative">
+            <div className="relative h-[400px] md:h-[500px]">
+              {/* Phone mockups */}
+              <div className="absolute top-0 right-0 w-[200px] md:w-[250px] z-30">
+                <Image
+                  src="/placeholder.svg?height=500&width=250"
+                  alt="Mobile app interface"
+                  width={250}
+                  height={500}
+                  className="object-contain"
+                />
+              </div>
+              <div className="absolute top-20 right-20 w-[200px] md:w-[250px] z-20">
+                <Image
+                  src="/placeholder.svg?height=500&width=250"
+                  alt="Mobile app interface"
+                  width={250}
+                  height={500}
+                  className="object-contain"
+                />
+              </div>
+              <div className="absolute top-40 right-40 w-[200px] md:w-[250px] z-10">
+                <Image
+                  src="/placeholder.svg?height=500&width=250"
+                  alt="Mobile app interface"
+                  width={250}
+                  height={500}
+                  className="object-contain"
+                />
+              </div>
+
+              {/* Red gradient background */}
+              <div className="absolute top-20 right-20 w-[300px] h-[300px] bg-red-500/30 rounded-full blur-3xl -z-10"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Premium Features Section */}
+      <section className="container mx-auto px-4 py-20">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="relative">
+            <div className="relative h-[400px] md:h-[500px] flex justify-center">
+              {/* Phone mockup */}
+              <div className="relative z-10">
+                <Image
+                  src="/placeholder.svg?height=500&width=250"
+                  alt="Mobile app interface"
+                  width={250}
+                  height={500}
+                  className="object-contain"
+                />
+              </div>
+
+              {/* Circular patterns */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] border border-gray-200 rounded-full"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] border border-gray-200 rounded-full"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] border border-gray-200 rounded-full"></div>
+
+              {/* Red gradient background */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-red-500/30 rounded-full blur-3xl -z-10"></div>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Uifry Premium</h2>
+
+            <div className="space-y-6">
+              <div className="flex items-start">
+                <div className="mt-1 mr-3 text-red-500">
+                  <Check size={20} />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg">Budget planning</h3>
+                  <p className="text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum aliquet. Praesent hendrerit id
+                    bibendum quis Duis, ut amet hendrerit.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="mt-1 mr-3 text-red-500">
+                  <Check size={20} />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg">Expense tracking</h3>
+                  <p className="text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum aliquet. Praesent hendrerit id
+                    bibendum quis Duis, ut amet hendrerit.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="mt-1 mr-3 text-red-500">
+                  <Check size={20} />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg">Investment advice</h3>
+                  <p className="text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum aliquet. Praesent hendrerit id
+                    bibendum quis Duis, ut amet hendrerit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-black text-white py-16 my-20 relative overflow-hidden">
+        <div className="absolute top-10 right-10 text-2xl text-gray-700">✧</div>
+        <div className="absolute bottom-10 left-10 text-2xl text-gray-700">✧</div>
+
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready To Get Started?</h2>
+              <p className="mb-8 text-gray-400">
+                Make a smart choice for your financial future. Download the app today and start making better financial
+                decisions.
+              </p>
+
+              <button className="bg-white text-black px-6 py-3 rounded-md flex items-center">
+                <Apple className="mr-2 h-5 w-5" />
+                Download App
+              </button>
+            </div>
+
+            <div className="relative">
+              <div className="relative h-[400px] flex justify-center">
+                {/* Phone mockups */}
+                <div className="absolute top-10 left-10 w-[180px] md:w-[220px] z-10 rotate-[-10deg]">
+                  <Image
+                    src="/placeholder.svg?height=450&width=220"
+                    alt="Mobile app interface"
+                    width={220}
+                    height={450}
+                    className="object-contain"
+                  />
+                </div>
+                <div className="absolute top-0 right-10 w-[180px] md:w-[220px] z-20 rotate-[10deg]">
+                  <Image
+                    src="/placeholder.svg?height=450&width=220"
+                    alt="Mobile app interface"
+                    width={220}
+                    height={450}
+                    className="object-contain"
+                  />
+                </div>
+
+                {/* Red gradient background */}
+                <div className="absolute bottom-0 right-0 w-[200px] h-[200px] bg-red-500/40 rounded-full blur-3xl"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="container mx-auto px-4 py-6 text-center text-gray-500 text-sm">
+        Copyright © 2024 uifry All Rights Reserved
       </footer>
     </div>
-  );
+  )
 }
+
