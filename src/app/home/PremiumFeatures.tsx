@@ -7,24 +7,16 @@ export default function PremiumFeatures() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="relative">
                     <div className="relative h-[400px] md:h-[500px] flex justify-center">
-                        {/* Phone mockup */}
+                        {/* (--------) || Phone mockup || (--------) */}
                         <div className="relative z-10">
                             <Image
-                                src="https://imgur.com/qAVShBu.png"
+                                src="https://imgur.com/HvARfHB.png"
                                 alt="Mobile app interface"
-                                width={250}
+                                width={500}
                                 height={500}
                                 className="object-contain"
                             />
                         </div>
-
-                        {/* Circular patterns */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] border border-gray-200 rounded-full"></div>
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] border border-gray-200 rounded-full"></div>
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] border border-gray-200 rounded-full"></div>
-
-                        {/* Red gradient background */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-red-500/30 rounded-full blur-3xl -z-10"></div>
                     </div>
                 </div>
 
