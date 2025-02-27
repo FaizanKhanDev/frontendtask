@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Play, Check, Apple } from "lucide-react"
 import Navbar from "./navbar/Navbar"
+import HeroSection from "./home/HeroSection"
 export default function Home() {
   return (
     <div className="min-h-screen bg-white overflow-hidden relative">
@@ -18,8 +19,8 @@ export default function Home() {
 
 
       {/* (-------------) ||  Hero Section   || (---------------) */}
+      <HeroSection></HeroSection>
 
-     
 
       {/* Premium Features Section */}
       <section className="container mx-auto px-4 py-20">
