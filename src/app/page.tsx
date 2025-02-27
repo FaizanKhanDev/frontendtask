@@ -1,7 +1,6 @@
 import Image from "next/image"
-import Link from "next/link"
 import { Play, Check, Apple } from "lucide-react"
-
+import Navbar from "./navbar/Navbar"
 export default function Home() {
   return (
     <div className="min-h-screen bg-white overflow-hidden relative">
@@ -13,32 +12,13 @@ export default function Home() {
       <div className="absolute bottom-80 left-20 text-2xl text-gray-200">✧</div>
       <div className="absolute bottom-20 right-10 text-2xl text-gray-200">✧</div>
 
-      {/* Navigation */}
-      <header className="container mx-auto px-4 py-6 flex items-center justify-between">
-        <div className="flex items-center">
-          <div className="h-8 w-8 bg-red-500 rounded-full mr-2"></div>
-          <span className="font-bold text-xl">uifry</span>
-        </div>
+      {/* (-------------) ||  Navigation  || (---------------) */}
+      <Navbar></Navbar>
 
-        <nav className="hidden md:flex items-center space-x-8">
-          <Link href="/" className="font-medium text-black">
-            Home
-          </Link>
-          <Link href="/about" className="font-medium text-gray-600">
-            About Us
-          </Link>
-          <Link href="/pricing" className="font-medium text-gray-600">
-            Pricing
-          </Link>
-          <Link href="/features" className="font-medium text-gray-600">
-            Features
-          </Link>
-        </nav>
 
-        <button className="bg-black text-white px-6 py-2 rounded-md">Download</button>
-      </header>
 
-      {/* Hero Section */}
+      {/* (-------------) ||  Hero Section   || (---------------) */}
+
       <section className="container mx-auto px-4 pt-10 pb-20">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1">
