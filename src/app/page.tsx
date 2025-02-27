@@ -99,7 +99,7 @@ export default function Home() {
               {/* Phone mockups */}
               <div className="absolute top-0 right-0 w-[200px] md:w-[250px] z-30">
                 <Image
-                  src="/placeholder.svg?height=500&width=250"
+                  src="https://imgur.com/qAVShBu.png"
                   alt="Mobile app interface"
                   width={250}
                   height={500}
@@ -108,7 +108,7 @@ export default function Home() {
               </div>
               <div className="absolute top-20 right-20 w-[200px] md:w-[250px] z-20">
                 <Image
-                  src="/placeholder.svg?height=500&width=250"
+                  src="https://imgur.com/qAVShBu.png"
                   alt="Mobile app interface"
                   width={250}
                   height={500}
@@ -117,7 +117,7 @@ export default function Home() {
               </div>
               <div className="absolute top-40 right-40 w-[200px] md:w-[250px] z-10">
                 <Image
-                  src="/placeholder.svg?height=500&width=250"
+                  src="https://imgur.com/qAVShBu.png"
                   alt="Mobile app interface"
                   width={250}
                   height={500}
@@ -140,7 +140,7 @@ export default function Home() {
               {/* Phone mockup */}
               <div className="relative z-10">
                 <Image
-                  src="/placeholder.svg?height=500&width=250"
+                  src="https://imgur.com/qAVShBu.png"
                   alt="Mobile app interface"
                   width={250}
                   height={500}
@@ -230,7 +230,7 @@ export default function Home() {
                 {/* Phone mockups */}
                 <div className="absolute top-10 left-10 w-[180px] md:w-[220px] z-10 rotate-[-10deg]">
                   <Image
-                    src="/placeholder.svg?height=450&width=220"
+                    src="https://imgur.com/qAVShBu.png"
                     alt="Mobile app interface"
                     width={220}
                     height={450}
@@ -239,7 +239,7 @@ export default function Home() {
                 </div>
                 <div className="absolute top-0 right-10 w-[180px] md:w-[220px] z-20 rotate-[10deg]">
                   <Image
-                    src="/placeholder.svg?height=450&width=220"
+                    src="https://imgur.com/qAVShBu.png"
                     alt="Mobile app interface"
                     width={220}
                     height={450}
