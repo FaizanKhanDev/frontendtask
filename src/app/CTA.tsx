@@ -24,7 +24,7 @@ export default function CTA() {
 
                     <div className="relative">
                         <div className="relative h-[400px] flex justify-center">
-                            {/* Phone mockups */}
+                            {/* (------------------)  || Phone mockups ||  (------------------) */}
                             <div className="absolute  left-0 w-[180px] md:w-[550px] z-10 rotate-[-10deg]">
                                 <Image
                                     src="https://imgur.com/0mfcjIC.png"
@@ -34,7 +34,7 @@ export default function CTA() {
                                     className="object-contain"
                                 />
                             </div>
-                            {/* Red gradient background */}
+                            {/* (------------------)  || Red gradient background ||  (------------------) */}
                             <div className="absolute bottom-0 right-0 w-[200px] h-[200px] bg-red-500/40 rounded-full blur-3xl"></div>
                         </div>
                     </div>
